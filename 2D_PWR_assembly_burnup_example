@@ -1,47 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
-<head>
-<meta charset="UTF-8" />
-<title>2D PWR assembly burnup example (Serpent 1 style division) - Serpent Wiki</title>
-<meta name="generator" content="MediaWiki 1.25.3" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="/mediawiki/opensearch_desc.php" title="Serpent Wiki (en)" />
-<link rel="EditURI" type="application/rsd+xml" href="http://serpent.vtt.fi/mediawiki/api.php?action=rsd" />
-<link rel="alternate" hreflang="x-default" href="/mediawiki/index.php/2D_PWR_assembly_burnup_example_(Serpent_1_style_division)" />
-<link rel="alternate" type="application/atom+xml" title="Serpent Wiki Atom feed" href="/mediawiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="stylesheet" href="http://serpent.vtt.fi/mediawiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.vector.styles&amp;only=styles&amp;skin=vector&amp;*" />
-<meta name="ResourceLoaderDynamicStyles" content="" />
-<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
-/* cache key: serpent_wiki:resourceloader:filter:minify-css:7:81f11506f138c26358f50903575970ae */</style>
-<script src="http://serpent.vtt.fi/mediawiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector&amp;*"></script>
-<script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"2D_PWR_assembly_burnup_example_(Serpent_1_style_division)","wgTitle":"2D PWR assembly burnup example (Serpent 1 style division)","wgCurRevisionId":1098,"wgRevisionId":1098,"wgArticleId":57,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"2D_PWR_assembly_burnup_example_(Serpent_1_style_division)","wgRelevantArticleId":57,"wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
-}</script><script>if(window.mw){
-mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});
-/* cache key: serpent_wiki:resourceloader:filter:minify-js:7:a5c52c063dc436c1ca7c9f456936a5e9 */
-}</script>
-<script>if(window.mw){
-mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","skins.vector.js"]);
-}</script>
-<!--[if lt IE 7]><style type="text/css">body{behavior:url("/mediawiki/skins/Vector/csshover.min.htc")}</style><![endif]-->
-</head>
-<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-2D_PWR_assembly_burnup_example_Serpent_1_style_division skin-vector action-view">
-		<div id="mw-page-base" class="noprint"></div>
-		<div id="mw-head-base" class="noprint"></div>
-		<div id="content" class="mw-body" role="main">
-			<a id="top"></a>
-
-						<div class="mw-indicators">
-</div>
-			<h1 id="firstHeading" class="firstHeading" lang="en">2D PWR assembly burnup example (Serpent 1 style division)</h1>
-						<div id="bodyContent" class="mw-body-content">
-									<div id="siteSub">From Serpent Wiki</div>
-								<div id="contentSub"></div>
-												<div id="jump-to-nav" class="mw-jump">
-					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
-				</div>
-				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><pre>
-set title &quot;PWR Burnup Calculation Based on NEA Benchmark&quot;
+set title "PWR Burnup Calculation Based on NEA Benchmark"
 
 % --- Fuel pins:
 
@@ -252,24 +209,24 @@ water
 % --- Pin lattice:
 
 lat 110  1  0.0 0.0 17 17  1.265
-  
-45 44 43 42 41 40 39 38 37 38 39 40 41 42 43 44 45 
-44 36 35 34 33 32 31 30 29 30 31 32 33 34 35 36 44 
-43 35 28 27 52 90 26 25 90 25 26 90 52 27 28 35 43 
-42 34 27 90 24 23 22 21 51 21 22 23 24 90 27 34 42 
-41 33 52 24 20 19 18 17 16 17 18 19 20 24 52 33 41 
-40 32 90 23 19 90 15 14 90 14 15 90 19 23 90 32 40 
-39 31 26 22 18 15 50 13 12 13 50 15 18 22 26 31 39 
-38 30 25 21 17 14 13 11 10 11 13 14 17 21 25 30 38 
-37 29 90 51 16 90 12 10 90 10 12 90 16 51 90 29 37 
-38 30 25 21 17 14 13 11 10 11 13 14 17 21 25 30 38 
-39 31 26 22 18 15 50 13 12 13 50 15 18 22 26 31 39 
-40 32 90 23 19 90 15 14 90 14 15 90 19 23 90 32 40 
-41 33 52 24 20 19 18 17 16 17 18 19 20 24 52 33 41 
-42 34 27 90 24 23 22 21 51 21 22 23 24 90 27 34 42 
-43 35 28 27 52 90 26 25 90 25 26 90 52 27 28 35 43 
-44 36 35 34 33 32 31 30 29 30 31 32 33 34 35 36 44 
-45 44 43 42 41 40 39 38 37 38 39 40 41 42 43 44 45 
+
+45 44 43 42 41 40 39 38 37 38 39 40 41 42 43 44 45
+44 36 35 34 33 32 31 30 29 30 31 32 33 34 35 36 44
+43 35 28 27 52 90 26 25 90 25 26 90 52 27 28 35 43
+42 34 27 90 24 23 22 21 51 21 22 23 24 90 27 34 42
+41 33 52 24 20 19 18 17 16 17 18 19 20 24 52 33 41
+40 32 90 23 19 90 15 14 90 14 15 90 19 23 90 32 40
+39 31 26 22 18 15 50 13 12 13 50 15 18 22 26 31 39
+38 30 25 21 17 14 13 11 10 11 13 14 17 21 25 30 38
+37 29 90 51 16 90 12 10 90 10 12 90 16 51 90 29 37
+38 30 25 21 17 14 13 11 10 11 13 14 17 21 25 30 38
+39 31 26 22 18 15 50 13 12 13 50 15 18 22 26 31 39
+40 32 90 23 19 90 15 14 90 14 15 90 19 23 90 32 40
+41 33 52 24 20 19 18 17 16 17 18 19 20 24 52 33 41
+42 34 27 90 24 23 22 21 51 21 22 23 24 90 27 34 42
+43 35 28 27 52 90 26 25 90 25 26 90 52 27 28 35 43
+44 36 35 34 33 32 31 30 29 30 31 32 33 34 35 36 44
+45 44 43 42 41 40 39 38 37 38 39 40 41 42 43 44 45
 
 % --- assembly data:
 
@@ -286,7 +243,7 @@ mat UO2    6.7402E-02  burn 1
 92234.09c  9.1361E-06
 92235.09c  9.3472E-04
 92238.09c  2.1523E-02
- 8016.09c  4.4935E-02
+8016.09c  4.4935E-02
 
 mat UO2Gd  6.8366E-02  burn 10
 92234.09c  4.2940E-06
@@ -298,7 +255,7 @@ mat UO2Gd  6.8366E-02  burn 10
 64157.09c  3.1518E-04
 64158.09c  4.9786E-04
 64160.09c  4.3764E-04
- 8016.09c  4.5243E-02
+8016.09c  4.5243E-02
 
 mat clad   3.8510E-02
 26000.06c  1.3225E-04
@@ -311,16 +268,16 @@ mat tube   4.3206E-02
 40000.06c  4.2982E-02
 
 mat water  7.2216E-02  moder lwtr 1001
- 1001.06c  4.8132E-02
- 8016.06c  2.4066E-02
- 5010.06c  3.6487E-06
- 5011.06c  1.4686E-05
+1001.06c  4.8132E-02
+8016.06c  2.4066E-02
+5010.06c  3.6487E-06
+5011.06c  1.4686E-05
 
 therm lwtr lwj3.11t
 
 % --- Cross section library file path:
 
-set acelib &quot;/xs/sss_endfb7u.xsdata&quot;
+set acelib "/xs/sss_endfb7u.xsdata"
 
 % --- Periodic boundary condition:
 
@@ -337,8 +294,8 @@ mesh 3 500 500
 
 % --- Decay and fission yield libraries:
 
-set declib &quot;/xs/sss_endfb7.dec&quot;
-set nfylib &quot;/xs/sss_endfb7.nfy&quot;
+set declib "/xs/sss_endfb7.dec"
+set nfylib "/xs/sss_endfb7.nfy"
 
 % --- Irradiation cycle:
 
@@ -346,256 +303,119 @@ set powdens 38.6E-3
 
 dep butot
 
-    0.10000
-    0.50000
-    1.00000
-    1.50000
-    2.00000
-    2.50000
-    3.00000
-    3.50000
-    4.00000
-    4.50000
-    5.00000
-    5.50000
-    6.00000
-    6.50000
-    7.00000
-    7.50000
-    8.00000
-    8.50000
-    9.00000
-    9.50000
-   10.00000
-   10.50000
-   11.00000
-   11.50000
-   12.00000
-   12.50000
-   13.00000
-   13.50000
-   14.00000
-   14.50000
-   15.00000
-   17.50000
-   20.00000
-   22.50000
-   25.00000
-   27.50000
-   30.00000
-   32.50000
-   35.00000
-   37.50000
-   40.00000
+0.10000
+0.50000
+1.00000
+1.50000
+2.00000
+2.50000
+3.00000
+3.50000
+4.00000
+4.50000
+5.00000
+5.50000
+6.00000
+6.50000
+7.00000
+7.50000
+8.00000
+8.50000
+9.00000
+9.50000
+10.00000
+10.50000
+11.00000
+11.50000
+12.00000
+12.50000
+13.00000
+13.50000
+14.00000
+14.50000
+15.00000
+17.50000
+20.00000
+22.50000
+25.00000
+27.50000
+30.00000
+32.50000
+35.00000
+37.50000
+40.00000
 
 % --- Nuclide inventory:
 
 set inventory
 
- 922340
- 922350
- 922360
- 922370
- 922380
- 922390
- 932360
- 932370
- 932380
- 932390
- 942360
- 942380
- 942390
- 942400
- 942410
- 942420
- 942430
- 952410                                       
- 952420
- 952430
- 952440
- 952421
- 962420
- 962430
- 962440
- 962450
- 962460
- 962470
- 962480
- 962490
- 972490
- 972500
- 982490
- 982500
- 982510
- 982520
- 360830
- 451030
- 451050
- 471090
- 531350
- 541310
- 541350
- 551330
- 551340
- 551350
- 551370
- 561400
- 571400
- 601430
- 601450
- 611470
- 611480
- 611490
- 611481
- 621470
- 621490
- 621500
- 621510
- 621520
- 631530
- 631540
- 631550
- 631560
- 641520
- 641540
- 641550
- 641560
- 641570
- 641600
-</pre>
-<!-- 
-NewPP limit report
-CPU time usage: 0.005 seconds
-Real time usage: 0.005 seconds
-Preprocessor visited node count: 4/1000000
-Preprocessor generated node count: 24/1000000
-Post‐expand include size: 0/2097152 bytes
-Template argument size: 0/2097152 bytes
-Highest expansion depth: 2/40
-Expensive parser function count: 0/100
--->
-
-<!-- 
-Transclusion expansion time report (%,ms,calls,template)
-100.00%    0.000      1 - -total
--->
-
-<!-- Saved in parser cache with key serpent_wiki:pcache:idhash:57-0!*!*!*!*!*!* and timestamp 20160323194656 and revision id 1098
- -->
-</div>									<div class="printfooter">
-						Retrieved from "<a dir="ltr" href="http://serpent.vtt.fi/mediawiki/index.php?title=2D_PWR_assembly_burnup_example_(Serpent_1_style_division)&amp;oldid=1098">http://serpent.vtt.fi/mediawiki/index.php?title=2D_PWR_assembly_burnup_example_(Serpent_1_style_division)&amp;oldid=1098</a>"					</div>
-													<div id='catlinks' class='catlinks catlinks-allhidden'></div>												<div class="visualClear"></div>
-							</div>
-		</div>
-		<div id="mw-navigation">
-			<h2>Navigation menu</h2>
-
-			<div id="mw-head">
-									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
-						<h3 id="p-personal-label">Personal tools</h3>
-						<ul>
-							<li id="pt-createaccount"><a href="/mediawiki/index.php?title=Special:UserLogin&amp;returnto=2D+PWR+assembly+burnup+example+%28Serpent+1+style+division%29&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/mediawiki/index.php?title=Special:UserLogin&amp;returnto=2D+PWR+assembly+burnup+example+%28Serpent+1+style+division%29" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
-					</div>
-									<div id="left-navigation">
-										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
-						<h3 id="p-namespaces-label">Namespaces</h3>
-						<ul>
-															<li  id="ca-nstab-main" class="selected"><span><a href="/mediawiki/index.php/2D_PWR_assembly_burnup_example_(Serpent_1_style_division)"  title="View the content page [c]" accesskey="c">Page</a></span></li>
-															<li  id="ca-talk" class="new"><span><a href="/mediawiki/index.php?title=Talk:2D_PWR_assembly_burnup_example_(Serpent_1_style_division)&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
-													</ul>
-					</div>
-										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
-												<h3 id="p-variants-label"><span>Variants</span><a href="#"></a></h3>
-
-						<div class="menu">
-							<ul>
-															</ul>
-						</div>
-					</div>
-									</div>
-				<div id="right-navigation">
-										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
-						<h3 id="p-views-label">Views</h3>
-						<ul>
-															<li id="ca-view" class="selected"><span><a href="/mediawiki/index.php/2D_PWR_assembly_burnup_example_(Serpent_1_style_division)" >Read</a></span></li>
-															<li id="ca-viewsource"><span><a href="/mediawiki/index.php?title=2D_PWR_assembly_burnup_example_(Serpent_1_style_division)&amp;action=edit"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
-															<li id="ca-history" class="collapsible"><span><a href="/mediawiki/index.php?title=2D_PWR_assembly_burnup_example_(Serpent_1_style_division)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
-													</ul>
-					</div>
-										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
-						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
-
-						<div class="menu">
-							<ul>
-															</ul>
-						</div>
-					</div>
-										<div id="p-search" role="search">
-						<h3>
-							<label for="searchInput">Search</label>
-						</h3>
-
-						<form action="/mediawiki/index.php" id="searchform">
-														<div id="simpleSearch">
-															<input type="search" name="search" placeholder="Search" title="Search Serpent Wiki [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchButton" class="searchButton" />								</div>
-						</form>
-					</div>
-									</div>
-			</div>
-			<div id="mw-panel">
-				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/mediawiki/index.php/Main_Page"  title="Visit the main page"></a></div>
-						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
-			<h3 id='p-navigation-label'>Navigation</h3>
-
-			<div class="body">
-									<ul>
-													<li id="n-mainpage-description"><a href="/mediawiki/index.php/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
-													<li id="n-recentchanges"><a href="/mediawiki/index.php/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
-													<li id="n-randompage"><a href="/mediawiki/index.php/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
-													<li id="n-help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" title="The place to find out">Help</a></li>
-											</ul>
-							</div>
-		</div>
-			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
-			<h3 id='p-tb-label'>Tools</h3>
-
-			<div class="body">
-									<ul>
-													<li id="t-whatlinkshere"><a href="/mediawiki/index.php/Special:WhatLinksHere/2D_PWR_assembly_burnup_example_(Serpent_1_style_division)" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
-													<li id="t-recentchangeslinked"><a href="/mediawiki/index.php/Special:RecentChangesLinked/2D_PWR_assembly_burnup_example_(Serpent_1_style_division)" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
-													<li id="t-specialpages"><a href="/mediawiki/index.php/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
-													<li id="t-print"><a href="/mediawiki/index.php?title=2D_PWR_assembly_burnup_example_(Serpent_1_style_division)&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
-													<li id="t-permalink"><a href="/mediawiki/index.php?title=2D_PWR_assembly_burnup_example_(Serpent_1_style_division)&amp;oldid=1098" title="Permanent link to this revision of the page">Permanent link</a></li>
-													<li id="t-info"><a href="/mediawiki/index.php?title=2D_PWR_assembly_burnup_example_(Serpent_1_style_division)&amp;action=info" title="More information about this page">Page information</a></li>
-											</ul>
-							</div>
-		</div>
-				</div>
-		</div>
-		<div id="footer" role="contentinfo">
-							<ul id="footer-info">
-											<li id="footer-info-lastmod"> This page was last modified on 30 November 2015, at 20:26.</li>
-									</ul>
-							<ul id="footer-places">
-											<li id="footer-places-privacy"><a href="/mediawiki/index.php/Serpent_Wiki:Privacy_policy" title="Serpent Wiki:Privacy policy">Privacy policy</a></li>
-											<li id="footer-places-about"><a href="/mediawiki/index.php/Serpent_Wiki:About" title="Serpent Wiki:About">About Serpent Wiki</a></li>
-											<li id="footer-places-disclaimer"><a href="/mediawiki/index.php/Serpent_Wiki:General_disclaimer" title="Serpent Wiki:General disclaimer">Disclaimers</a></li>
-									</ul>
-										<ul id="footer-icons" class="noprint">
-											<li id="footer-poweredbyico">
-															<a href="//www.mediawiki.org/"><img src="/mediawiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/mediawiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /mediawiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>
-													</li>
-									</ul>
-						<div style="clear:both"></div>
-		</div>
-		<script>if(window.jQuery)jQuery.ready();</script><script>if(window.mw){
-mw.loader.state({"site":"ready","user":"ready","user.groups":"ready"});
-}</script>
-<script>if(window.mw){
-mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest"],null,true);
-}</script>
-<script>if(window.mw){
-mw.config.set({"wgBackendResponseTime":126});
-}</script>
-	</body>
-</html>
+922340
+922350
+922360
+922370
+922380
+922390
+932360
+932370
+932380
+932390
+942360
+942380
+942390
+942400
+942410
+942420
+942430
+952410
+952420
+952430
+952440
+952421
+962420
+962430
+962440
+962450
+962460
+962470
+962480
+962490
+972490
+972500
+982490
+982500
+982510
+982520
+360830
+451030
+451050
+471090
+531350
+541310
+541350
+551330
+551340
+551350
+551370
+561400
+571400
+601430
+601450
+611470
+611480
+611490
+611481
+621470
+621490
+621500
+621510
+621520
+631530
+631540
+631550
+631560
+641520
+641540
+641550
+641560
+641570
+641600
